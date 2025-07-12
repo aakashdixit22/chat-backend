@@ -47,18 +47,3 @@ app.post('/', (req, res) => {
 app.use('/auth', authRoutes);
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
-
-// Receives a new chat event (POST /).
-
-// Checks if it's a new message event (type === 'message.new').
-
-// Excludes the sender from the recipient list.
-
-// Loops through remaining members.
-
-// Checks if a member is offline.
-
-// Sends an SMS notification using Twilio to offline members.
-
-// Logs success or errors.
